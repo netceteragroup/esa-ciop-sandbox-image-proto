@@ -250,7 +250,7 @@ objectClass: top
 objectClass: organizationalUnit
 
 dn: uid=bob,ou=people,dc=g-pod
-cn: Ronnie Brunner
+cn: Bob Smith
 description: allowed bob,192.168.11.(10|20)
 gecos: bob
 gidNumber: 100
@@ -266,7 +266,7 @@ objectClass: ldapPublicKey
 sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 dn: uid=alice,ou=people,dc=g-pod
-cn: Emmanuel Mathot
+cn: Alice Jones
 description: allowed alice,192.168.11.10
 gecos: alice
 gidNumber: 100
