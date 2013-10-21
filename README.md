@@ -5,9 +5,9 @@ This repository contains a prototype for cloud server and sandbox image creation
 
 * All files and communication to be encrypted
 * Images to be immutable (read-only and re-created if changes are desired)
-* Limited writeable files are remote mounted via (user-space encrypted) NFS
+* Limited writable files are remote mounted via (user-space encrypted) NFS
 
-The base (RedHat-based Scientifix Linux) images and their cloud support were configured/created using the apparently-now-deprecated open source boxgrinder appliance creaton tool, together with these highly customized scripts. VirtualBox is used for local development of these image creation scripts. Then the images are re-generated for specific deployment on a particular cloud provider.
+The base (RedHat-based Scientific Linux) images and their cloud support were configured/created using the apparently-now-deprecated open source boxgrinder appliance creation tool, together with these highly customized scripts. VirtualBox is used for local development of these image creation scripts. Then the images are re-generated for specific deployment on a particular cloud provider.
 
 * [ESA](http://esa.int)
 * [ESA's Earth Observation CIOP project](http://ciop.eo.esa.int)
@@ -20,10 +20,10 @@ This prototype generates two types of cloud-agnostic images - 1) a server image 
 
 There are three classes of files that the server serves:
  * Effectively Insecure e.g. /data - the imagery data
- * 1-party secure e.g. /home - source code accessable only by the end-user
- * 2-party secure e.g. /validate - binaries modules accessable by the end-user and a validating party
+ * 1-party secure e.g. /home - source code accessible only by the end-user
+ * 2-party secure e.g. /validate - binaries modules accessible by the end-user and a validating party
 
-All of the secure files are encrypted/decrypted in userspace on the client-side using encfs.
+All of the secure files are encrypted/decrypted in user-space on the client-side using encfs.
 
 Details
 ---------------------
